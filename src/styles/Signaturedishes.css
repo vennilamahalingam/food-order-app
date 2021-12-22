@@ -1,0 +1,33 @@
+.signatureDishes {
+  background-color: #9297b4;
+  margin-top: 50px;
+  padding-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-bottom: 50px;
+  height: 400px;
+}
+.dishTitle {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 20px;
+  color: #8e5d2a;
+}
+
+.subDishTitle {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.dishGallery img {
+  transition: all 0.5s ease;
+  width: 320px;
+  height: 252px;
+}
+.dishGallery img:hover {
+  width: 335px;
+  height: 262px;
+}

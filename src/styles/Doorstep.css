@@ -1,0 +1,33 @@
+.doorStepService {
+  width: 100%;
+  background-color: #ececec;
+  margin-top: 40px;
+  height: 400px;
+}
+
+.doorStepService div {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 210px;
+}
+
+.swiggy img,
+.zomato img {
+  transition: all 0.5s;
+}
+.swiggy:hover img,
+.zomato:hover img {
+  width: 210px;
+  height: 210px;
+}
+.swiggy img,
+.zomato img {
+  width: 200px;
+  height: 200px;
+}
+hr {
+  width: 300px;
+}
