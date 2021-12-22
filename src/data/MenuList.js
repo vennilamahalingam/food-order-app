@@ -9,7 +9,7 @@ export const MenuList = [
   {
     name: "Chole Bhature",
     image: Chole,
-    price: 250,
+    price: 250
   },
   {
     name: "Masala Dosa",
