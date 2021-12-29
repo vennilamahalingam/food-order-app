@@ -1,0 +1,76 @@
+.cartParent {
+  flex: 1;
+}
+.status {
+  font-size: 13px;
+}
+.cartParent {
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+.itemEntry img {
+  width: 20px;
+  height: 20px;
+}
+
+.itemEntry img {
+  width: 20px;
+  height: 20px;
+}
+
+.cartBody {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.itemEntry {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.quantityCounter {
+  display: flex;
+  border: 1px solid #cbd4cd;
+  color: #60b246;
+  padding: 10px;
+  width: 50px;
+  text-align: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.subTotalBody {
+  font-size: 10px;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 30px;
+}
+
+.subtotal {
+  font-size: 15px;
+}
+.itemEntry .name {
+  margin-right: 40px;
+  width: 200px;
+  margin-left: 10px;
+}
+
+.orderbutton {
+  background-color: #3c3cbc;
+  margin-right: 10px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.subtotalCost {
+  font-size: 15px;
+}
+.subtotalCost::before {
+  content: "\20B9";
+}
