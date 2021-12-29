@@ -19,7 +19,9 @@
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^6.1.1",
     "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.4",
     "react-visibility-sensor": "^5.1.1",
+    "react-whatsapp": "^0.2.1",
     "web-vitals": "^2.1.2"
   },
   "scripts": {

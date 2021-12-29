@@ -30,7 +30,7 @@ function SignatureDishes()
       };
     const sliderArray = [slide1, slide2, slide3,slide4, slide5,slide6];
         return (
-            <div className="signatureDishes">
+            <div className="signatureDishes" id="signatureDishes">
                 <div className="dishTitle">
                     Tradition & Passion
                 </div>

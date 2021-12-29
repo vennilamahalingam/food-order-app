@@ -30,7 +30,7 @@ function Aboutus ()
       };
     return (
         <>
-        <div className="aboutParent">
+        <div className="aboutParent" id="aboutUs">
             <div className="aboutText">
                 <h1>Our Journey</h1>
                 <div>

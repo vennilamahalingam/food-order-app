@@ -1,26 +1,21 @@
 
 import './App.css';
-import {BrowserRouter as Router} from "react-router-dom";
-import Navbar from './components/Navbar';
-import HomeSlider from './components/HomeSlider';
-import Aboutus from './components/Aboutus';
-import SignatureDishes from './components/SignatureDishes';
-import Counter from './components/Counter.js';
-import Doorstep from './components/Doorstep';
+import {BrowserRouter as Router, Route,Routes} from 'react-router-dom';
+import Home from './components/Home';
 import Footer from './components/Footer';
+import Catering from "./components/Catering.js";
 function App() {
   return (
-    <Router>
         <div className="App">
-            <Navbar/>
-            <HomeSlider/>
-            <Aboutus/>
-            <SignatureDishes/>
-            <Counter/>
-            <Doorstep/> 
+            <Router>
+              <Routes>
+                  <Route path="/" exact element={<Home/>} />
+                  <Route path="/Catering" element={<Catering/>}/>
+              </Routes>
+            </Router>
             <Footer/>
         </div>
-    </Router>
+    
     
   );
 }

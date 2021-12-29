@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {Link} from "react-router-dom";
+import {Link as ScrollLink} from "react-scroll";
 import "../styles/navbar.css";
 import ReorderIcon from '@mui/icons-material/Reorder';
 
@@ -24,17 +25,17 @@ function Navbar(params) {
             </div>
             <div className="navIcons">
                 <Link to="/">Home</Link>
-                <Link to="./aboutus">About us</Link>
-                <Link to="./dishes">Signature dishes</Link>
+                <ScrollLink to="aboutUs" spy={true} smooth={true} offset={-145}><div>About us</div></ScrollLink>
+                <ScrollLink to="signatureDishes" spy={true} smooth={true} offset={-145}><div>Signature dishes</div></ScrollLink>
                 <Link to="./catering">Catering</Link>
-                <Link to="./contactus">Contact us</Link>
+                <ScrollLink to="contactUs" spy={true} smooth={true} offset={-145}><div>Contact us</div></ScrollLink>
             </div>
             <div className="navIconsDropDown" style={{display : showIcon ? "flex" : "none"}}>
                 <Link to="/">Home</Link>
-                <Link to="./aboutus">About us</Link>
-                <Link to="./dishes">Signature dishes</Link>
+                <div>About us</div>
+                <div>Signature dishes</div>
                 <Link to="./catering">Catering</Link>
-                <Link to="./contactus">Contact us</Link>
+                <div>Contact us</div>
             </div>
         </div>
      </div>
