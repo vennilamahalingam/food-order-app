@@ -64,7 +64,7 @@ function Cart({cartItems, setCartItems})
         cartItems.cartArr.forEach((data)=>{
             message = message + data.name +" " + data.quantity + "\n"
         });
-        message = message + "total :" + cartItems.totalCost;
+        message = message + "\n\ntotal :" + cartItems.totalCost;
         window.location.href = `mailto:"dayalprasad19@gmail.com"?Subject="Order for the day"&body=${message}`
     }
 return(
