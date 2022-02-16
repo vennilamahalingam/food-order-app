@@ -58,6 +58,15 @@ function Cart({cartItems, setCartItems})
             }
             );
     }
+    function placeOrder()
+    {
+        let message = "";
+        cartItems.cartArr.forEach((data)=>{
+            message = message + data.name +" " + data.quantity + "\n"
+        });
+        message = message + "total :" + cartItems.totalCost;
+        window.location.href = `mailto:"dayalprasad19@gmail.com"?Subject="Order for the day"&body=${message}`
+    }
 return(
     <>
         <div className="cartParent">
@@ -96,7 +105,7 @@ return(
                     </div>
                     <div className="subtotalCost">{cartItems.totalCost}</div>
                 </div>
-                <div className="orderbutton">Place an order</div>
+                <div className="orderbutton" onClick={placeOrder}>Place an order</div>
                 </>
             }
              </div>
